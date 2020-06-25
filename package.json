@@ -1,0 +1,39 @@
+{
+  "name": "my-novel-editor",
+  "version": "1.0.0",
+  "description": "I am a writer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inakarune/my-novel-editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inakarune/my-novel-editor/issues"
+  },
+  "homepage": "https://github.com/inakarune/my-novel-editor#readme",
+  "dependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "css-loader": "^3.6.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
