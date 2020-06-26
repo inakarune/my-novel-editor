@@ -1,0 +1,39 @@
+.character-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+        background-position: center;
+        background-size: 100%;
+        width: 210px;
+        height: 250px;
+        position: relative;
+        border-radius: 15px;
+        margin-right: 35px;
+        margin-bottom: 35px;
+        & > p {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            font-weight: bolder;
+        }
+    }
+}
+.plus-profile {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #006666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    &:hover {
+        color: #006666;
+        background-color: transparent;
+        border: 2px solid #006666;
+    }
+}

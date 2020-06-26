@@ -1,0 +1,12 @@
+.episode-container, .episode-category {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+.episode-category {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+}

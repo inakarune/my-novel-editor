@@ -1,0 +1,87 @@
+.photo-box {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #F0F0F0;
+    box-shadow: 1px 11px 11px #f0f0f0;
+    & > img {
+        width: 200px;
+    }
+}
+.create-profile-container {
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 75px;
+}
+.text-input, .number-input {
+    background-color: #FCFBFC;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 15px;
+    padding: 15px;
+    outline: none;
+    &:focus {
+        background-color: white;
+    }
+}
+.textarea {
+    width: 600px;
+    background-color: #FCFBFC;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+    outline: none;
+    &:focus {
+        background-color: white;
+    }
+}
+.input-box, .radio-box {
+    color: #616161;
+}
+.radio-box {
+    width: 232px;
+}
+.upload-photo-btn {
+    background-color: #FF836B;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    right: -636px;
+    top: -67px;
+    border: none;
+    cursor: pointer;
+    & svg {
+        color: white;
+    }
+    &:hover {
+        background-color: white;
+        border: 1px solid #FF836B;
+    }
+    &:hover svg {
+        color: #ff836b;
+    }
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+.save-btn {
+    background-color: #FFBC00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+.mr90 {
+    margin-right: 90px;
+}

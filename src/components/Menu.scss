@@ -1,0 +1,25 @@
+.menu {
+    background-color: white;
+    padding: 10px;
+    & > li {
+        margin-bottom: 20px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover svg {
+            color: white;
+        }
+        &:hover {
+            background-color: #aedada;
+        }
+        & a {
+            color: #0a2929;
+            &:visited, &:active {
+                color: #0a2929;
+            }
+        }
+    }
+}
