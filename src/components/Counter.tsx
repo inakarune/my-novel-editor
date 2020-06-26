@@ -1,38 +1,24 @@
 import React from 'react';
 import Trello from './Trello';
+import Menu from './Menu';
+import ChracterList from './ChracterList';
+import CharacterList from './ChracterList';
+import './Couter.scss';
 
-interface CounterProps {
-    name: string;
-}
+class Counter extends React.Component {
+
+ 
+
   
-interface CounterState {
-    count: number;
-}
-class Counter extends React.Component<CounterProps, CounterState> {
-    constructor(props: CounterProps) {
-      super(props);
-      this.state = {
-        count: 0,
-      };
-    }
-  
-    componentDidMount() {
-      setInterval(this.increase, 1000);
-    }
-  
-    increase = () => {
-      const { count } = this.state;
-      this.setState({ count: count + 1 });
-    }
-  
-    render() {
-      const { name } = this.props;
-      const { count } = this.state;
-  
+    render(): JSX.Element {
       return (
-        <React.Fragment>
-            <Trello />
-        </React.Fragment>
+        <div className="container">
+            <div>ArianReben</div>
+            <div>
+                <Menu/>
+                <CharacterList />
+            </div>
+        </div>
       );
     }
 }
