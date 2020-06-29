@@ -4,7 +4,7 @@ import './EpisodeList.scss';
 class EpisodeList extends React.Component {
     render(): JSX.Element {
         return (<>
-            <div className="episode-category"><span>카를로스</span></div>
+            <div className="episode-category"><span>카를로스 <b>10</b></span></div>
             <div className="episode-container">
                 <table className="episode-table">
                     <thead>
@@ -24,6 +24,13 @@ class EpisodeList extends React.Component {
                             <td>2020.05.25</td>
                             <td>2020.06.25</td>
                         </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>공작부인과의 한판!</td>
+                            <td>작성중</td>
+                            <td>2020.05.25</td>
+                            <td>2020.06.25</td>
+                        </tr>                        
                     </tbody>
                 </table>
             </div>

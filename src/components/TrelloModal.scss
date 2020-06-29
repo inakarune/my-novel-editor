@@ -1,0 +1,45 @@
+.trello-modal-back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    & .trello-modal-container {
+        background-color: white;
+        margin: 0 auto;
+        width: 600px;
+        padding: 25px;
+        margin-top: 15%;
+        border-radius: 10px;
+        & .top p {
+            margin: 0;
+        }
+        & .top {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        & .content {
+            & .btn-box {
+                & button {
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+                & button:first-child {
+                    background-color: #006666;
+                    margin-right: 10px;
+                }
+                & button:nth-child(2) {
+                    margin-right: 10px;
+                    background-color: #FFBB00;
+                }
+                & button:last-child {
+                    background-color: #FF876F;
+                }
+            }
+        }
+    }
+}

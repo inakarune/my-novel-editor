@@ -17,3 +17,128 @@
         background-color: slateblue;
     }
 }
+.trello-list {
+    & > li {
+        background-color: #F1F5FD;
+        border-radius: 10px;
+        padding: 15px;
+        width: 250px;
+        & p {
+            margin: 0;
+        }
+        & .title {
+            font-weight: bolder;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            & > span:first-child {
+                color: #2E3341;
+            }
+            & > span:last-child {
+                color: #A9ABBC;
+                border-radius: 20px;
+                padding: 0px 5px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #E8E9F6;
+                }
+            }
+        }
+    }
+}
+.trello-background {
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.trello-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    & .edit {
+        display: none;
+    }
+    &:hover .edit {
+        display: block;
+
+        & svg {
+            color: #B6B4BC;
+        }
+    }
+    & .green svg {
+        color: #1EC969;
+    }
+    & .red svg {
+        color: #FF8468;
+    }
+    &:hover .green, &:hover .red {
+        display: none;
+    }
+}
+.add-item {
+    margin-bottom: 25px;
+    color: #5B5F76;
+    & textarea {
+        width: 250px;
+        padding: 5px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+    & .btn-box {
+        margin-top: 10px;
+    }
+    & button {
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    & button:nth-child(1) {
+        background-color: #FFBC00;
+        margin-right: 10px;
+    }
+    & button:nth-child(2) {
+        background-color: #FF8468;
+        margin-right: 10px;
+    }
+    & button:nth-child(3) {
+        background-color: transparent;
+        margin-left: 32%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        outline: none;
+        & svg {
+            color: #A9ABBC;
+        }
+        &:hover {
+            background-color: #B6B4BC;
+        }
+        &:hover svg {
+            color: #5b5f76;
+        }
+    }
+}
+.true {
+    border-left: 5px solid #FFBB00;
+}
+.bad {
+    border-left: 5px solid #FF8367;
+}
+.another {
+    border-left: 5px solid #8C12E9;
+}
+.common {
+    border-left: 5px solid #006666;
+}
+

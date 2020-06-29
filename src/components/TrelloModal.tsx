@@ -1,6 +1,11 @@
 import React, { CSSProperties } from 'react';
+import './TrelloModal.scss';
 
-class TrelloModal extends React.Component {
+interface PropFromTrello {
+    text: string;
+    onclose:() => void;
+}
+class TrelloModal extends React.Component<PropFromTrello> {
     public state = {
         editInput: false,
         editDesc: false,
@@ -8,6 +13,14 @@ class TrelloModal extends React.Component {
     };
 
     private handleChange = (e: React.ChangeEvent): void => {
+    }
+
+    componentWillReceiveProps(nextProp: PropFromTrello) {
+        console.log(nextProp, this.props)
+    }
+    
+    componentDidMount() {
+        this.setState({ title: this.props.text });
     }
 
     render(): JSX.Element {
@@ -22,13 +35,14 @@ class TrelloModal extends React.Component {
             <div className="trello-modal-back">
                 <div className="trello-modal-container">
                     <div className="top">
-                        <p><input type="text" style={ inputBool } value={ this.state.title } onChange={ this.handleChange } /></p>
-                        <span>✖</span>
+                        <p><span>{ !this.state.editInput ? this.state.title : null }</span><input type="text" style={ inputBool } value={ this.state.title } onChange={ this.handleChange } /></p>
+                        <span onClick={ this.props.onclose }>✖</span>
                     </div>
                     <div className="content">
                         <div className="btn-box">
                             <button>Member</button>
                             <button>Label</button>
+                            <button>Complete</button>
                         </div>
                         <h3>Description</h3>
                         <p>There are beautiful sisters in the town.</p>

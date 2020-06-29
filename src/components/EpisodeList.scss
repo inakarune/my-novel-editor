@@ -2,6 +2,8 @@
     background-color: white;
     border-radius: 10px;
     width: 100%;
+    padding:25px;
+    font-size: 14px;
 }
 .episode-category {
     margin-bottom: 25px;
@@ -9,4 +11,33 @@
     justify-content: center;
     padding: 25px;
     box-sizing: border-box;
+    font-weight: bolder;
+    & b {
+        background-color: #006666;
+        color: white;
+        border-radius: 20px;
+        padding: 7.5px 5px;
+        line-height: 11.5px;
+        display: inline-block;
+    }
+}
+.episode-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 12px;
+    & thead {
+        background-color: #F3F4FB;
+        color: #9292A2;
+        border-radius: 10px;
+        & th {
+            padding: 15px;
+        }
+    }
+    & tr td {
+        padding: 15px;
+    }
+    & tbody tr:nth-child(even) {
+        background-color: #FAFAFC;
+    }
 }

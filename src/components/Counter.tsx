@@ -5,6 +5,7 @@ import Menu from './Menu';
 import ChracterList from './ChracterList';
 import EpisodeList from '../components/EpisodeList';
 import CreateProfile from './CreateProfile';
+import CGList from './CGList';
 import './Counter.scss';
 
 class Counter extends React.Component {
@@ -22,6 +23,7 @@ class Counter extends React.Component {
                         <Switch>
                             <Route path="/episode" component={ EpisodeList } />
                             <Route path="/trello" component={ Trello } />
+                            <Route path="/cg" component={ CGList } />
                             <Route path="/character/create" component={ CreateProfile } />
                             <Redirect path="*" to="/" />
                         </Switch>
