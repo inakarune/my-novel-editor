@@ -17,6 +17,11 @@
         background-color: slateblue;
     }
 }
+.trello-area {
+    & .plus-another {
+        cursor: pointer;
+    }
+}
 .trello-list {
     & > li {
         background-color: #F1F5FD;
@@ -98,34 +103,26 @@
         border: none;
         padding: 5px 10px;
         border-radius: 5px;
+        cursor: pointer;
     }
     & button:nth-child(1) {
         background-color: #FFBC00;
         margin-right: 10px;
     }
     & button:nth-child(2) {
-        background-color: #FF8468;
-        margin-right: 10px;
+        background-color: transparent;
+    }
+    & button:nth-child(2):hover {
+        background-color: transparent;
+        color: #FF8468;
     }
     & button:nth-child(3) {
         background-color: transparent;
         margin-left: 32%;
-        width: 20px;
-        height: 20px;
         cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        outline: none;
-        & svg {
-            color: #A9ABBC;
-        }
+
         &:hover {
             background-color: #B6B4BC;
-        }
-        &:hover svg {
-            color: #5b5f76;
         }
     }
 }

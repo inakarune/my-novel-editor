@@ -15,11 +15,17 @@
         border-radius: 10px;
         & .top p {
             margin: 0;
+            width: 82%;
+            & input {
+                padding: 5px;
+                width: 100%;
+            }
         }
         & .top {
             display: flex;
             justify-content: space-between;
             cursor: pointer;
+            margin-bottom: 15px;
         }
         & .content {
             & .btn-box {
@@ -35,6 +41,10 @@
                 & button:nth-child(2) {
                     margin-right: 10px;
                     background-color: #FFBB00;
+                }
+                & button:nth-child(3) {
+                    margin-right: 10px;
+                    background-color: #1EC969;
                 }
                 & button:last-child {
                     background-color: #FF876F;
